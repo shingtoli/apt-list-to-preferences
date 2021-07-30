@@ -1,16 +1,23 @@
 {
-  "name": "apt_list_to_preferences",
+  "name": "aptpref",
   "version": "1.0.0",
   "description": "Converts apt list output to preferences file",
   "main": "index.js",
+  "bin": "index.js",
   "scripts": {
-    "build": "nexe ./index.js --output ./bin/aptpref",
+    "build": "pkg --compress GZip .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Li Shing To <shingto@shingto.com>",
   "license": "MIT",
   "dependencies": {
-    "nexe": "^4.0.0-beta.18",
     "yargs": "^17.0.1"
+  },
+  "devDependencies": {
+    "pkg": "^5.3.1"
+  },
+  "pkg": {
+      "targets": ["node12-linux-x64"],
+      "outputPath": "bin"
   }
 }

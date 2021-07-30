@@ -8,11 +8,11 @@ Depending on the pin-priority value, `apt` will prefer or demand the specific ve
 
 ## Building from source ##
 
-Install nvm and set node version to 12.16.2
+Install nvm and use node 12
 
 ```sh
-nvm install 12.16.2
-nvm use 12.16.2
+nvm install 12
+nvm use 12
 ```
 
 Subsequently, only the following needs to be run

@@ -39,8 +39,8 @@ const packageRegex = /([\w-]*)\/([\w-,]*)\s([^\s]*)\s(\w*)\s\[(.*)\]/;
 const aptprefs = aptlist
     .split('\n')
     .filter(p => p.trim().length > 0)
-    .map((package) => {
-        const matches = package.match(packageRegex);
+    .map((aptPackage) => {
+        const matches = aptPackage.match(packageRegex);
         if (!matches) {
             return null;
         }
