@@ -1,0 +1,16 @@
+{
+  "name": "apt_list_to_preferences",
+  "version": "1.0.0",
+  "description": "Converts apt list output to preferences file",
+  "main": "index.js",
+  "scripts": {
+    "build": "nexe ./index.js --output ./bin/aptpref",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Li Shing To <shingto@shingto.com>",
+  "license": "MIT",
+  "dependencies": {
+    "nexe": "^4.0.0-beta.18",
+    "yargs": "^17.0.1"
+  }
+}

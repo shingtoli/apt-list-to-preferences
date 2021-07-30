@@ -1,0 +1,7 @@
+node_modules/
+bin/*
+!bin/.gitkeep
+
+apt_list.txt
+preferences
+.nvimlog
